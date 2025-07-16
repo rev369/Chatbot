@@ -1,0 +1,22 @@
+[project]
+name = "selenium"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+]
+
+[dependency-groups]
+dev = [
+    "fastapi>=0.116.0",
+    "requests>=2.32.4",
+    "selenium",
+]
+test = [
+    "pytest>=8.4.1",
+]
+
+[tool.uv.sources]
+selenium = { workspace = true }
