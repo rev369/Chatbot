@@ -145,7 +145,7 @@ def main():
     initialize_session_state()
     
     # Header
-    st.title("🤖 AI Chatbot")
+    st.title("🤖 AI Assistant")
     st.markdown("*Powered by Phi3 - Your AI Assistant*")
     
     # Sidebar

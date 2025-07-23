@@ -1,13 +1,18 @@
-[project]
-name = "chatbot"
+[tool.poetry]
+name = "streamlit"
 version = "0.1.0"
-description = "Add your description here"
+description = ""
+authors = ["Tisheel Bashyam <tisheelbashyam@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "datetime>=5.5",
-    "langchain>=0.3.26",
-    "langchain-ollama>=0.3.5",
-    "logging>=0.4.9.6",
-    "streamlit>=1.47.0",
-]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.26"
+langchain-community = "^0.3.27"
+langchain-core = "^0.3.71"
+datetime = "^5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
