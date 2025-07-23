@@ -49,4 +49,4 @@ RUN poetry install --no-root
 EXPOSE 8090
 
 # Run Streamlit via Poetry
-CMD ["poetry", "run", "streamlit", "run", "chatbot.py", "--server.port=8090"]
+  CMD ["streamlit", "run", "chatbot.py", "--server.address", "0.0.0.0", "--server.port", "8090"]
