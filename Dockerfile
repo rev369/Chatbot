@@ -38,7 +38,7 @@ WORKDIR /Chatbot
 # Copy all project files into the container
 COPY . .
 
-# Install Python dependencies using Poetry
+# Install Python dependencies using Poetrya
 RUN poetry install --no-root
 
 # Expose Streamlit port
