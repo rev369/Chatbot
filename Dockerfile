@@ -20,10 +20,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # -------------------------------
 # Install Ollama
 # -------------------------------
-RUN curl -fsSL https://ollama.com/install.sh | sh
+RUN curl RUN curl --http1.1 -fsSL https://ollama.com/install.sh | sh
+
 
 # Pull phi3 model
-RUN ollama pull phi3:latest
+RUN ollama serve & \
+    sleep 5 && \
+    ollama pull phi3:latest
+
 
 # -------------------------------
 # Install Poetry

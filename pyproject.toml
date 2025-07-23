@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "streamlit"
+name = "chatbot"
 version = "0.1.0"
 description = ""
 authors = ["Tisheel Bashyam <tisheelbashyam@gmail.com>"]
@@ -11,6 +11,7 @@ langchain = "^0.3.26"
 langchain-community = "^0.3.27"
 langchain-core = "^0.3.71"
 datetime = "^5.5"
+streamlit = "^1.47.0"
 
 
 [build-system]
