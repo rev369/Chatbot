@@ -1,4 +1,4 @@
-from langchain_ollama import ChatOllama
+from langchain_community.chat_models import ChatOllama
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 import streamlit as st
 import time
