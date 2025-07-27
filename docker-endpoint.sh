@@ -7,4 +7,4 @@ ollama serve &
 sleep 10
 
 # Run Streamlit binding to 0.0.0.0 so it’s accessible externally
-exec poetry run streamlit run chatbot.py --server.address 0.0.0.0 --server.port 8090
+exec poetry run streamlit run chatbot.py  --server.port 8090
